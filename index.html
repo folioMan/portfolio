@@ -81,7 +81,7 @@
                     <img src="images/1.jpg" alt="1.jpg" title="1.jpg">
                     <div class="show-overlay">
                         <div class="details">
-                            <h3>asdasd</h3>
+                            <h3>asdasddasda</h3>
                             View
                         </div>
                     </div>
@@ -209,7 +209,7 @@
             jQuery.each($data.project, function(i, val) {
                 if(i == id) {
                     console.log(val['cover-image']);
-                    $('.project-image img').attr('src', './images/'+val['cover-image']);
+                    $('.project-image img').attr('src', './images/'+val['project-image']);
                     $('.project-details h2').html(val.title);
                     $('.project-paragraph').html(val.description);
                     $('.project-link a').attr('href', val.link);
